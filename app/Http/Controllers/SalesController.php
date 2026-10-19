@@ -13,7 +13,7 @@ class SalesController extends Controller
     public function index()
     {
         //
-        
+        $sales = DB::table('sales')->get();
     }
 
     /**
@@ -22,7 +22,6 @@ class SalesController extends Controller
     public function create()
     {
         //
-        $sales = DB::table('sales')->get();
     }
 
     /**
